@@ -106,8 +106,6 @@ Logik: Java-Klassen für die Geschäftslogik (Buch, Benutzer, Ausleihe)
 
 Benutzeroberfläche: JavaFX zur Erstellung einer intuitiven Benutzeroberfläche
 
-=== ...
-
 == Projekthandbuch "Organisatorische Rahmenbedingungen"
 
 
@@ -118,7 +116,7 @@ Benutzeroberfläche: JavaFX zur Erstellung einer intuitiven Benutzeroberfläche
 [plantuml,gantt-protoype,png]
 ----
 @startgantt
-[make Prototype] lasts 30 days
+[make Prototype] lasts 25 days
 [Test prototype] lasts 10 days
 [Test prototype] starts at [make Prototype]'s end
 [Prototype completed] happens at [Test prototype]'s end
