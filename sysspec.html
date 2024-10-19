@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.20">
-<meta name="author" content="Simon Koller">
+<meta name="author" content="firstname lastname">
 <link rel="icon" type="image/png" href="themes/favicon.png">
 <title>My Project</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -449,7 +449,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>My Project</h1>
 <div class="details">
-<span id="author" class="author">Simon Koller</span><br>
+<span id="author" class="author">firstname lastname</span><br>
 <span id="revnumber">version 1.0.0,</span>
 <span id="revdate">2024-10-19</span>
 <br><span id="revremark">Some notes</span>
@@ -483,72 +483,40 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="icon"><a class="image" href="https://raw.githubusercontent.com/htl-leonding-college/asciidoctor-docker-template/master/asciidocs/sysspec.adoc"><i class="fa fa-file-text-o"></i></a></span> ‏ ‏ ‎
+<span class="icon"><a class="image" href="https://github.com/htl-leonding-college/asciidoctor-docker-template"><i class="fa fa-github-square"></i></a></span> ‏ ‏ ‎
+<span class="icon"><a class="image" href="https://htl-leonding.github.io/"><i class="fa fa-home"></i></a></span></p>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_pflichtenheft_was_mache_ich"><a class="anchor" href="#_pflichtenheft_was_mache_ich"></a>1. Pflichtenheft "Was mache ich"</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_ausgangssituation"><a class="anchor" href="#_ausgangssituation"></a>1.1. Ausgangssituation</h3>
 <div class="paragraph">
-<p>In vielen Bibliotheken wird die Verwaltung von Büchern oft manuell durchgeführt. Dies ist zeitaufwendig und fehleranfällig.</p>
+<p>Die HTL Leonding ist eine HTL im oö. Zentralraum mit ca. 1000 Schülern und den Fachabteilungen Medientechnik, Informatik, &#8230;&#8203;.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_istzustand"><a class="anchor" href="#_istzustand"></a>1.2. Istzustand</h3>
 <div class="listingblock">
 <div class="content">
-<pre>Der aktuelle Zustand ist geprägt von manuellen Listen, Excel-Tabellen oder unübersichtlichen Datenbanken. Es fehlt an einer zentralen und effizienten Lösung zur Verwaltung von Buchdaten.</pre>
+<pre>Beschreibung der speziellen Situation zB in der Abteilung</pre>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_problemstellung"><a class="anchor" href="#_problemstellung"></a>1.3. Problemstellung</h3>
-<div class="paragraph">
-<p>Die manuelle Verwaltung von Büchern führt zu folgenden Problemen:</p>
-</div>
-<div class="paragraph">
-<p>Hohe Fehleranfälligkeit bei der Datenpflege</p>
-</div>
-<div class="paragraph">
-<p>Schwierige Suche nach bestimmten Büchern</p>
-</div>
-<div class="paragraph">
-<p>Fehlende Übersicht über den gesamten Bestand</p>
-</div>
-<div class="paragraph">
-<p>Kein automatisches Erstellen von Statistiken</p>
-</div>
+
 </div>
 <div class="sect2">
 <h3 id="_aufgabenstellung"><a class="anchor" href="#_aufgabenstellung"></a>1.4. Aufgabenstellung</h3>
-<div class="paragraph">
-<p>Entwicklung eines Programmes zur Verwaltung von Büchern</p>
-</div>
-<div class="paragraph">
-<p>Einfache Eingabe und Verwaltung von Buchdaten</p>
-</div>
-<div class="paragraph">
-<p>Möglichkeit zur Suche nach Büchern anhand verschiedener Kriterien</p>
-</div>
-<div class="paragraph">
-<p>Erstellung von Statistiken über den Buchbestand</p>
-</div>
 <div class="sect3">
 <h4 id="_funktionale_anforderungen"><a class="anchor" href="#_funktionale_anforderungen"></a>1.4.1. Funktionale Anforderungen</h4>
-<div class="paragraph">
-<p>Erfassen von Büchern</p>
-</div>
-<div class="paragraph">
-<p>Statistiken erstellen</p>
-</div>
-<div class="paragraph">
-<p>Ausleihen und Zurückgeben von Büchern</p>
-</div>
-<div class="paragraph">
-<p>Reservierung von Büchern</p>
-</div>
-<div class="paragraph">
-<p>Erstellung von Nutzerprofilen mit Ausleihhistorie</p>
-</div>
 <div class="imageblock">
 <div class="content">
 <img src="images/wireframe.png" alt="wireframe" width="376" height="84">
@@ -557,48 +525,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect3">
 <h4 id="_nichtfunktionale_anforderungen_nfa"><a class="anchor" href="#_nichtfunktionale_anforderungen_nfa"></a>1.4.2. Nichtfunktionale Anforderungen (NFA)</h4>
-<div class="paragraph">
-<p>Benutzerfreundliche Oberfläche</p>
-</div>
-<div class="paragraph">
-<p>Stabilität und Sicherheit der Anwendung</p>
-</div>
-<div class="paragraph">
-<p>Skalierbarkeit für wachsende Buchbestände</p>
-</div>
+
 </div>
 </div>
 <div class="sect2">
 <h3 id="_ziele"><a class="anchor" href="#_ziele"></a>1.5. Ziele</h3>
-<div class="paragraph">
-<p>Effiziente und benutzerfreundliche Lösung zur Verwaltung von Büchern</p>
-</div>
-<div class="paragraph">
-<p>Automatisierung von Prozessen</p>
-</div>
-<div class="paragraph">
-<p>Verbesserung der Übersichtlichkeit und des Zugriffs auf Buchdaten</p>
-</div>
+
 </div>
 <div class="sect2">
 <h3 id="_mengengerüst"><a class="anchor" href="#_mengengerüst"></a>1.6. Mengengerüst</h3>
-<div class="paragraph">
-<p>Initialer Buchbestand: 500 Bücher</p>
-</div>
-<div class="paragraph">
-<p>Anzahl der Benutzer: 100</p>
-</div>
+
 </div>
 <div class="sect2">
 <h3 id="_rahmenbedingungen"><a class="anchor" href="#_rahmenbedingungen"></a>1.7. Rahmenbedingungen</h3>
 <div class="paragraph">
-<p>Programmirsprache: Java</p>
-</div>
-<div class="paragraph">
-<p>Verwendung von Linux</p>
-</div>
-<div class="paragraph">
-<p>Nicht zu komplex</p>
+<p>zB Vorgaben vom Auftraggeber</p>
 </div>
 </div>
 </div>
@@ -608,15 +549,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_systemarchitektur"><a class="anchor" href="#_systemarchitektur"></a>2.1. Systemarchitektur</h3>
-<div class="paragraph">
-<p>Datenbank: Speicherung von Buchdaten, Benutzerinformationen und Ausleihinformationen</p>
-</div>
-<div class="paragraph">
-<p>Logik: Java-Klassen für die Geschäftslogik (Buch, Benutzer, Ausleihe)</p>
-</div>
-<div class="paragraph">
-<p>Benutzeroberfläche: JavaFX zur Erstellung einer intuitiven Benutzeroberfläche</p>
-</div>
+
 </div>
 <div class="sect2">
 <h3 id=""><a class="anchor" href="#"></a>2.2. &#8230;&#8203;</h3>
@@ -629,9 +562,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_gantt_diagramm"><a class="anchor" href="#_gantt_diagramm"></a>3.1. GANTT-Diagramm</h3>
+<div class="paragraph">
+<p>mit User-Stories (definiert in YouTrack)</p>
+</div>
 <div class="imageblock">
 <div class="content">
-<img src="images/gantt-protoype.png" alt="gantt protoype" width="871" height="117">
+<img src="images/gantt-protoype.png" alt="gantt protoype" width="353" height="100">
 </div>
 </div>
 <div class="ulist">
@@ -651,7 +587,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2024-10-19 18:07:25 UTC
+Last updated 2024-10-19 18:19:24 UTC
 </div>
 </div>
 </body>
