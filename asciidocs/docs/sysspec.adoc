@@ -1,5 +1,5 @@
 = My Project
-Simon Koller
+firstname lastname
 1.0.0, {docdate}: Some notes
 ifndef::imagesdir[:imagesdir: images]
 //:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
@@ -8,7 +8,15 @@ ifndef::imagesdir[:imagesdir: images]
 :sectnums:    // Nummerierung der Überschriften / section numbering
 :toc: left
 
-//Need this blank l
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+
+// https://fontawesome.com/v4.7.0/icons/
+icon:file-text-o[link=https://raw.githubusercontent.com/htl-leonding-college/asciidoctor-docker-template/master/asciidocs/{docname}.adoc] ‏ ‏ ‎
+icon:github-square[link=https://github.com/htl-leonding-college/asciidoctor-docker-template] ‏ ‏ ‎
+icon:home[link=https://htl-leonding.github.io/]
+endif::backend-html5[]
+
 // print the toc here (not at the default position)
 //toc::[]
 
@@ -17,44 +25,15 @@ ifndef::imagesdir[:imagesdir: images]
 
 === Ausgangssituation
 
-In vielen Bibliotheken wird die Verwaltung von Büchern oft manuell durchgeführt. Dies ist zeitaufwendig und fehleranfällig.
+Die HTL Leonding ist eine HTL im oö. Zentralraum mit ca. 1000 Schülern und den Fachabteilungen Medientechnik, Informatik, ....
 
 === Istzustand
 ----
-Der aktuelle Zustand ist geprägt von manuellen Listen, Excel-Tabellen oder unübersichtlichen Datenbanken. Es fehlt an einer zentralen und effizienten Lösung zur Verwaltung von Buchdaten.
+Beschreibung der speziellen Situation zB in der Abteilung
 ----
 === Problemstellung
-Die manuelle Verwaltung von Büchern führt zu folgenden Problemen:
-
-Hohe Fehleranfälligkeit bei der Datenpflege
-
-Schwierige Suche nach bestimmten Büchern
-
-Fehlende Übersicht über den gesamten Bestand
-
-Kein automatisches Erstellen von Statistiken
-
 === Aufgabenstellung
-
-Entwicklung eines Programmes zur Verwaltung von Büchern
-
-Einfache Eingabe und Verwaltung von Buchdaten
-
-Möglichkeit zur Suche nach Büchern anhand verschiedener Kriterien
-
-Erstellung von Statistiken über den Buchbestand
-
 ==== Funktionale Anforderungen
-
-Erfassen von Büchern
-
-Statistiken erstellen
-
-Ausleihen und Zurückgeben von Büchern
-
-Reservierung von Büchern
-
-Erstellung von Nutzerprofilen mit Ausleihhistorie
 
 [plantuml,wireframe,png]
 ----
@@ -62,50 +41,19 @@ Erstellung von Nutzerprofilen mit Ausleihhistorie
 {
 Name         | "                 "
 Modifiers:   | { (X) public | () default | () private | () protected
-                [] abstract | [] final   | [] static }
+	            [] abstract | [] final   | [] static }
 Superclass:  | { "java.lang.Object " | [Browse...] }
 }
 @endsalt
 ----
 ==== Nichtfunktionale Anforderungen (NFA)
-
-Benutzerfreundliche Oberfläche
-
-Stabilität und Sicherheit der Anwendung
-
-Skalierbarkeit für wachsende Buchbestände
-
 === Ziele
-
-Effiziente und benutzerfreundliche Lösung zur Verwaltung von Büchern
-
-Automatisierung von Prozessen
-
-Verbesserung der Übersichtlichkeit und des Zugriffs auf Buchdaten
-
 === Mengengerüst
-
-Initialer Buchbestand: 500 Bücher
-
-Anzahl der Benutzer: 100
-
 === Rahmenbedingungen
-
-Programmirsprache: Java
-
-Verwendung von Linux
-
-Nicht zu komplex
+zB Vorgaben vom Auftraggeber
 
 == Entwurf "Wie mache ich es"
 === Systemarchitektur
-
-Datenbank: Speicherung von Buchdaten, Benutzerinformationen und Ausleihinformationen
-
-Logik: Java-Klassen für die Geschäftslogik (Buch, Benutzer, Ausleihe)
-
-Benutzeroberfläche: JavaFX zur Erstellung einer intuitiven Benutzeroberfläche
-
 === ...
 
 == Projekthandbuch "Organisatorische Rahmenbedingungen"
@@ -114,17 +62,16 @@ Benutzeroberfläche: JavaFX zur Erstellung einer intuitiven Benutzeroberfläche
 
 === GANTT-Diagramm
 
+mit User-Stories (definiert in YouTrack)
 
 [plantuml,gantt-protoype,png]
 ----
 @startgantt
-[make Prototype] lasts 30 days
 [Test prototype] lasts 10 days
-[Test prototype] starts at [make Prototype]'s end
 [Prototype completed] happens at [Test prototype]'s end
-[Setup assembly line] lasts 7 days
+[Setup assembly line] lasts 12 days
 [Setup assembly line] starts at [Test prototype]'s end
-[Test prototype 2] lasts 5 days
+[Test prototype 2] lasts 3 days
 [Test prototype 2] starts at [Prototype completed]'s end
 @endgantt
 ----
@@ -133,3 +80,4 @@ Benutzeroberfläche: JavaFX zur Erstellung einer intuitiven Benutzeroberfläche
 
 * link:minutes-of-meeting.html[Protokollvorlage]
 * link:demo.html[Demo]
+
