@@ -56,7 +56,6 @@ Reservierung von Büchern
 
 Erstellung von Nutzerprofilen mit Ausleihhistorie
 
-[plantuml,wireframe,png]
 ----
 @startsalt
 {
@@ -91,7 +90,7 @@ Anzahl der Benutzer: 100
 
 === Rahmenbedingungen
 
-Programmirsprache: Java
+Programmiersprache: Java
 
 Verwendung von Linux
 
