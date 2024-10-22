@@ -1,4 +1,4 @@
-= My Project
+= Bibliotheksverwaltung
 Simon Koller
 1.0.0, {docdate}: Projektantrag
 ifndef::imagesdir[:imagesdir: images]
@@ -56,16 +56,6 @@ Reservierung von Büchern
 
 Erstellung von Nutzerprofilen mit Ausleihhistorie
 
-----
-@startsalt
-{
-Name         | "                 "
-Modifiers:   | { (X) public | () default | () private | () protected
-                [] abstract | [] final   | [] static }
-Superclass:  | { "java.lang.Object " | [Browse...] }
-}
-@endsalt
-----
 ==== Nichtfunktionale Anforderungen (NFA)
 
 Benutzerfreundliche Oberfläche
